@@ -78,7 +78,7 @@ export default function CreateProductPage() {
       reviews: 0,
     };
 
-    // dispatch(addProduct(newProduct));
+    dispatch(addProduct(newProduct));
     router.push('/admin/dashboard');
   };
 
