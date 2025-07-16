@@ -39,7 +39,7 @@ export default function CartPage() {
           <ShoppingBag className="w-24 h-24 mx-auto text-gray-300 mb-6" />
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Your Cart is Empty</h1>
           <p className="text-lg text-gray-600 mb-8">
-            Looks like you haven't added any items to your cart yet.
+            Looks like you haven&apos;t added any items to your cart yet.
           </p>
           <Link href="/shop">
             <Button size="lg">
@@ -174,7 +174,7 @@ export default function CartPage() {
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Subtotal</span>
-                      <span className="font-medium">${total.toFixed(2)}</span>
+                      <span className="font-medium">KES {total.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Shipping</span>
@@ -184,7 +184,7 @@ export default function CartPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Tax</span>
-                      <span className="font-medium">${tax.toFixed(2)}</span>
+                      <span className="font-medium">KES {tax.toFixed(2)}</span>
                     </div>
                     <div className="border-t pt-4">
                       <div className="flex justify-between items-center">

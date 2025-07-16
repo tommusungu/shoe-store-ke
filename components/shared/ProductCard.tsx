@@ -79,7 +79,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           )}
 
           {/* Quick Add Button */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileHover={{ opacity: 1, y: 0 }}
             className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -88,7 +88,17 @@ export default function ProductCard({ product }: ProductCardProps) {
               <ShoppingCart className="w-4 h-4 mr-2" />
               Quick Add
             </Button>
-          </motion.div>
+          </motion.div> */}
+
+          <div
+            
+            className="absolute bottom-2 left-2 right-2 sm:opacity-0 group-hover:opacity-100 transition-opacity"
+          >
+            <Button onClick={handleAddToCart} className="w-full bg-blue-600 hover:bg-blue-700">
+              <ShoppingCart className="w-4 h-4 mr-2" />
+              <span className=''>Quick Add</span>
+            </Button>
+          </div>
         </div>
 
         <CardContent className="p-4">

@@ -86,7 +86,7 @@ export default function CartSidebar() {
                             <p className="text-xs text-gray-500 mb-1">
                               Size: {item.size} | Color: {item.color}
                             </p>
-                            <p className="font-semibold text-sm">${item.product.price}</p>
+                            <p className="font-semibold text-sm">KES {item.product.price}</p>
                             
                             <div className="flex items-center justify-between mt-2">
                               <div className="flex items-center space-x-2">
@@ -131,7 +131,7 @@ export default function CartSidebar() {
               <div className="border-t p-4 space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="font-semibold">Total:</span>
-                  <span className="text-xl font-bold">${total.toFixed(2)}</span>
+                  <span className="text-xl font-bold">KES {total.toFixed(2)}</span>
                 </div>
                 <div className="space-y-2">
                   <Link href="/cart" onClick={() => dispatch(toggleCart())}>
