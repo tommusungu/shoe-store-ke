@@ -4,14 +4,14 @@ export interface Product {
   price: number;
   originalPrice?: number;
   image: string;
-  otherImages:string[];
+  otherImages?:string[];
   category: 'men' | 'women' | 'kids';
   brand: string;
   sizes: number[];
   colors: string[];
   description: string;
-  features: string[];
-  inStock: boolean;
+  features?: string[];
+  inStock?: boolean;
   rating: number;
   reviews: number;
 }

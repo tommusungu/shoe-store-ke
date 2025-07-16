@@ -66,6 +66,7 @@ export default function CreateProductPage() {
       price: parseFloat(formData.price),
       originalPrice: formData.originalPrice ? parseFloat(formData.originalPrice) : undefined,
       image: formData.image || 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop',
+      otherImages: ['https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop'],
       category: formData.category as 'men' | 'women' | 'kids',
       brand: formData.brand,
       sizes: formData.sizes,

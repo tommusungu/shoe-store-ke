@@ -30,6 +30,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import Image from 'next/image';
 
 export default function AdminDashboardPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -192,7 +193,7 @@ export default function AdminDashboardPage() {
                       <TableRow key={product.id}>
                         <TableCell>
                           <div className="flex items-center space-x-3">
-                            <img
+                            <Image
                               src={product.image}
                               alt={product.name}
                               className="w-12 h-12 rounded-lg object-cover"
