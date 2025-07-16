@@ -88,7 +88,7 @@ export default function HomePage() {
                 <span className="text-blue-600"> Now!</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Explore our curated collections and find the perfect shoes that speak to your style. Shop with confidence knowing you're getting quality and comfort.
+                Explore our curated collections and find the perfect shoes that speak to your style. Shop with confidence knowing you&apos;re getting quality and comfort.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/shop">
@@ -200,7 +200,7 @@ export default function HomePage() {
                   Deal of the Day
                 </h2>
                 <p className="text-xl mb-6 text-blue-100">
-                  Don't miss out on this amazing deal! Limited time offer on premium footwear.
+                  Don&apos;t miss out on this amazing deal! Limited time offer on premium footwear.
                 </p>
                 <div className="flex items-center space-x-4 mb-6">
                   <span className="text-3xl font-bold">KES {dealProduct.price}</span>
@@ -321,7 +321,7 @@ export default function HomePage() {
               What Our Customers Say
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied customers have to say.
+              Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say.
             </p>
           </motion.div>
 
@@ -341,7 +341,7 @@ export default function HomePage() {
                         <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
-                    <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
+                    <p className="text-gray-600 mb-4">&quot;{testimonial.comment}&quot;</p>
                     <div className="flex items-center space-x-3">
                       <Image
                         src={testimonial.avatar}
