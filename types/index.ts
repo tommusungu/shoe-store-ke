@@ -4,7 +4,7 @@ export interface Product {
   price: number;
   originalPrice?: number;
   image: string;
-  images:string[];
+  otherImages:string[];
   category: 'men' | 'women' | 'kids';
   brand: string;
   sizes: number[];
@@ -12,27 +12,10 @@ export interface Product {
   description: string;
   features: string[];
   inStock: boolean;
-  featured: boolean;
-  onSale: boolean;
   rating: number;
   reviews: number;
 }
 
-export interface Order {
-  id: string;
-  userId: string;
-  items: CartItem[];
-  total: number;
-  status: 'pending' | 'confirmed' | 'shipped' | 'delivered';
-  paymentMethod: 'card' | 'mpesa';
-  createdAt: string;
-  deliveryAddress: {
-    street: string;
-    city: string;
-    country: string;
-    zipCode: string;
-  };
-}
 export interface CartItem {
   product: Product;
   quantity: number;
